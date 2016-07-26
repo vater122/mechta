@@ -4,15 +4,39 @@
 
 use yii\helpers\Html;
 
-$this->title = 'About';
-$this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="site-about">
-    <h1><?= Html::encode($this->title) ?></h1>
+    <h1>«МЕЧТА» — НОВОЕ КАЧЕСТВО!</h1>
 
     <p>
-        This is the About page. You may modify the following file to customize its content:
-    </p>
+        Компания «Мечта» предоставляет услуги связи в г. Симферополе
+        Наши абоненты всегда обеспечены безлимитным интернетом с высокими и сверхвысокими скоростями по разумным ценам,
+        и предельным вниманием со стороны отдела техподдержки. К нам легко присоединиться — достаточно оставить заявку на подключение
+    </p
+        <p>или позвонить по телефонам:</p>
+       <p> +7(978) 718-18-08</p>
+    <p>+7(978) 722-99-52</p>
+    <p> +7(3652) 70-00-69</p>
 
-    <code><?= __FILE__ ?></code>
+    <div align="center">
+        <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=-3Dc5qy55sQ0frPSA4QjfmLyBa_euf-R&width=800&height=650&lang=ru_RU&sourceType=constructor"></script>
+        <h1>Адрес:</h1>
+        <p>Россия, Республика Крым г. Симферополь, ул.Маршала Жукова 15</p>
+
+        <p>Режим работы</p>
+
+        <p>Пн - Пт : с 09:00 до 18:00</p>
+
+        <p>Сб - Вс:  c10:00 до 16:00</p>
+
+
+
+        <p>Техническая поддержка</p>
+        <p> +7(978) 722-99-52</p>
+        <p> +7(978) 718-18-08</p>
+        <p>e-mail: mriya-simf@mail.ru</p>
+    </div>
+
+
+
 </div>
