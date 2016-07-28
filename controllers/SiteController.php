@@ -122,4 +122,24 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
+
+    public function actionCoverage()
+    {
+        return $this->render('coverage');
+    }
+
+    public function actionTariff()
+    {
+        return $this->render('tariff');
+    }
+
+    public function actionPayment()
+    {
+        return $this->render('payment');
+    }
+
+    public function actionChannels()
+    {
+        return $this->render('channels');
+    }
 }

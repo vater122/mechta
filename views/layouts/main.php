@@ -37,6 +37,10 @@ AppAsset::register($this);
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
             ['label' => 'Домой', 'url' => ['/site/index']],
+            ['label' => 'Тарифы', 'url' => ['/site/tariff']],
+            ['label' => 'Каналы', 'url' => ['/site/channels']],
+            ['label' => 'Покрытие', 'url' => ['/site/coverage']],
+            ['label' => 'Оплата', 'url' => ['/site/payment']],
             ['label' => 'О нас', 'url' => ['/site/about']],
             ['label' => 'Контакты', 'url' => ['/site/contact']],
             Yii::$app->user->isGuest ? (
@@ -73,6 +77,7 @@ AppAsset::register($this);
 </footer>
 
 <?php $this->endBody() ?>
+
 </body>
 </html>
 <?php $this->endPage() ?>
