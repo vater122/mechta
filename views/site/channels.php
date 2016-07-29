@@ -1,8 +1,8 @@
 <p>Каналы</p>
-<link rel="stylesheet" type="text/css" href="/../web/css/table.css">
+<!--<link rel="stylesheet" type="text/css" href="/../../web/css/table_blur.css">-->
 <div align="center">
 <h1 style="margin-top: 60px"">Настройки цифрового кабельного телевидения(DVB-C)</h1>
-<table class="table_blur" style="margin: auto">
+<table class="table_blur" style="margin: auto; font-size: 300%">
     <tr>
         <th>
             Частота

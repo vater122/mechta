@@ -1,32 +1,18 @@
 
-<link rel="stylesheet" type="text/css" href="/../web/css/table.css">
 <div align="center">
     <h1>Тарифы</h1>
-<table>
+<table class="table_blur" style="font-size: 300%">
     <tr>
         <th>Пакет</th>
         <th>Скорость</th>
         <th>Цена(руб./мес.)</th>
     </tr>
-    <tr>
-        <td>Максимальный + КТВ</td>
-        <td>до 100 M/bit</td>
-        <td>500</td>
-    </tr>
-    <tr>
-        <td>Оптимальный + КТВ</td>
-        <td>до 50 M/bit</td>
-        <td>450</td>
-    </tr>
-    <tr>
-        <td>Домашний + КТВ</td>
-        <td>до 20 M/bit</td>
-        <td>350</td>
-    </tr>
-    <tr>
-        <td>Кабельное Телевидение</td>
-        <td>---</td>
-        <td>150</td>
-    </tr>
+    <?php foreach($tariffs as $tariff): ?>
+        <tr>
+            <td><?= $tariff->name; ?></td>
+            <td><?php $tariff->speed === '' ? print('') : print('до '.$tariff->speed.' M/bit'); ?></td>
+            <td><?= $tariff->price; ?></td>
+        </tr>
+    <?php endforeach; ?>
 </table>
 </div>

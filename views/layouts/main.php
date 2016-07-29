@@ -27,7 +27,7 @@ AppAsset::register($this);
 <div class="wrap">
     <?php
     NavBar::begin([
-        'brandLabel' => 'МЕЧТА',
+        'brandLabel' => '<img src="' . \Yii::$app->request->BaseUrl . '/img/logo.png"/>',
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
@@ -37,11 +37,15 @@ AppAsset::register($this);
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
             ['label' => 'Домой', 'url' => ['/site/index']],
+            ['label' => 'Новости', 'url' => ['/news/index']],
             ['label' => 'Тарифы', 'url' => ['/site/tariff']],
             ['label' => 'Каналы', 'url' => ['/site/channels']],
             ['label' => 'Покрытие', 'url' => ['/site/coverage']],
             ['label' => 'Оплата', 'url' => ['/site/payment']],
-            ['label' => 'О нас', 'url' => ['/site/about']],
+            ['label' => 'О нас', 'items' => [
+                ['label' => 'Мы на карте', 'url' => ['/site/about']],
+                ['label' => 'Лицензия', 'url' => ['/site/license']],
+            ]],
             ['label' => 'Контакты', 'url' => ['/site/contact']],
             Yii::$app->user->isGuest ? (
                 ['label' => 'Войти', 'url' => ['/site/login']]

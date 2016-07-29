@@ -8,6 +8,7 @@ use yii\web\Controller;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
+use app\models\Site;
 
 class SiteController extends Controller
 {
@@ -123,6 +124,11 @@ class SiteController extends Controller
         return $this->render('about');
     }
 
+    public function actionLicense()
+    {
+        return $this->render('license');
+    }
+
     public function actionCoverage()
     {
         return $this->render('coverage');
@@ -130,7 +136,8 @@ class SiteController extends Controller
 
     public function actionTariff()
     {
-        return $this->render('tariff');
+        $tariffs = Site::getTariff();
+        return $this->render('tariff', ['tariffs'=>$tariffs]);
     }
 
     public function actionPayment()
