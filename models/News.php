@@ -22,4 +22,14 @@ class News extends ActiveRecord
     {
 
     }
+
+    public static function updateNewsById($id)
+    {
+
+    }
+
+    public static function deleteNewsById($id)
+    {
+
+    }
 }
